@@ -3,7 +3,12 @@
     {
       "id": 1,
       "name": "Purchase Thank-You Template",
-      "content": "<p>Dear {{customer.firstname}} {{customer.lastname}},</p>\n\n<p>Thank you for your recent order! You've purchased:</p>\n\n<ul>\n    {% for product in customer.last_order.products %}\n    <li>\n        <strong>{{product.product_name}}</strong><br>\n        {{product.product_desc}}\n    </li>\n    {% endfor %}\n</ul>"
+      "content": "<p>Dear {{firstname}} {{lastname}},</p>\n\n<p>Thank you for your recent order! You've purchased:</p>\n\n<ul>\n    {{#each last_order.products }}\n    <li>\n        <strong>{{product_name}}</strong><br>\n        {{product_desc}}\n    </li>\n    {{/each}}\n</ul>"
+    },
+    {
+      "name": "Render Names",
+      "content": "Hello my name is {{firstmame}} {{lastname}}",
+      "id": 2
     }
   ],
   "customers": [
@@ -140,6 +145,12 @@
       "firstname": "Vida",
       "lastname": "Gomm",
       "email": "vgomm2q@arizona.edu"
+    },
+    {
+      "firstname": "Alexey",
+      "lastname": "Kozyachiy",
+      "email": "alexey.kozyachiy@gmail.com",
+      "id": "H8W-AuZ"
     }
   ]
 }

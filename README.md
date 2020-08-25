@@ -1,6 +1,4 @@
-# Frontend Templates and Mock Customer Data
- 
-This repo contains a mock API server, which will serve customers and HTML templates to your frontend app.
+![alt text](public/project.png)
 
 ## Installation
 
@@ -16,24 +14,26 @@ To run the server, run this command:
 
 The output should display the URL of the running server (e.g. http//localhost:3000).
 
-## Usage
+## Start the Client
 
-Once the server is running, you can create, retrieve, update, and delete customers and HTML templates using the server's API endpoints. For example:
+To run the  client app, run this command: 
 
-Retrieve templates : `GET /api/templates`
+```npm run dev```
 
-Retrieve a template by ID : `GET /api/templates/:id`
+ Project is running at http://localhost:8080/
 
-Save a new template: `POST /api/templates`
+## Run test
 
-Update an existing template: `PUT /api/templates/:id` 
+To run tests, tun the command:
 
-Retrieve customers : `GET /api/customers`
+```npm test```
 
-Retrieve a customer by ID : `GET /api/customers/:id`
+## Packages
 
-Retrieve a customer by email : `GET /api/customers?email=:email`
-
-Filter users by partial email : `GET /api/customers?email_like=:partial_email`
-
-See the json-server documentation for a full usage guide. 
+| Package                                                | Version                                                                                                                             | Description                                                                        |
+| ------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| [`react`](https://github.com/facebook/react)           | [![npm](https://img.shields.io/npm/v/react-router.svg?style=flat-square)](https://www.npmjs.com/package/react-router)               | React library                                                                      |
+| [`styled-components`](https://www.npmjs.com/package/styled-components)       | [![npm](https://img.shields.io/npm/v/styled-components.svg?style=flat-square)](https://www.npmjs.com/package/styled-components)       | To style react components with minimal CSS                 |
+| [`pcln-design-system`](https://www.npmjs.com/package/pcln-design-system) | [![npm](https://img.shields.io/npm/v/pcln-design-system.svg?style=flat-square)](https://www.npmjs.com/package/pcln-design-system) | Design Framework that was initially built by me                 |
+| [`redux`](https://www.npmjs.com/package/redux) | [![npm](https://img.shields.io/npm/v/redux.svg?style=flat-square)](https://www.npmjs.com/package/redux) | Redux is a predictable state container for JavaScript apps                                       |    
+| [`redux-saga`](https://www.npmjs.com/package/redux-saga) | [![npm](https://img.shields.io/npm/v/redux-saga.svg?style=flat-square)](https://www.npmjs.com/package/redux-saga) | Saga middleware to handle Side Effects                                       |  
